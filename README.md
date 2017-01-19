@@ -1,0 +1,1 @@
+There's one folder for each of the challenges. Each folder has it's own README.md that mimics the challenge description from hackerrank. All of the descriptions were copied from the hackerrank website. The challenges can be found at https://www.hackerrank.com/contests/cs50x-2017/challenges
