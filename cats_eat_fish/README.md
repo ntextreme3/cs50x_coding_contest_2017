@@ -6,11 +6,11 @@ You may include additional header files as needed, and you may call any function
 
 Odds are you'll find get_int and printf of interest!
 
-Input Format
+###Input Format
 
 The first line will be an integer number of fish F the cat starts out with. The next line will be an integer number of days D the cat will eat fish. There will be D lines afterwards, each containing an integer number of fish the cat wants to eat that day.
 
-Constraints
+###Constraints
 
 0 <= F < INT_MAX
 
@@ -18,23 +18,24 @@ Constraints
 
 For each Ei, 0 <= Ei <= INT_MAX
 
-Output Format
+###Output Format
 
 If the cat will run out of fish, output a day in int format. Otherwise, output Happy Cat!. No need to worry about newlines.
 
-Sample Input
-
-40
-5
-10
-7
-30
-5
-5
-Sample Output
-
+###Sample Input
+<pre>
+40  
+5  
+10  
+7  
+30  
+5  
+5  
+</pre>
+###Sample Output
+<pre>
 2
-
-Explanation
+</pre>
+###Explanation
 
 The cat starts out with 40 fish. It plans to eat fish for 5 days. On the 0th day, it eats 10 of those fish, so has 40 - 10 = 30 fish left. On the 1st day, it eats 7 of the remaining 30 fish, and so has 30 - 7 = 23 fish left. On the 2nd day, the cat plans to eat 30 of the remaining 23 fish. Uh oh! The cat will run out of fish on the 2nd day.
