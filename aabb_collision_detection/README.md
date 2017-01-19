@@ -27,13 +27,13 @@ Each of x, y, w, and h will always be a floating-point value with exactly one di
 A single line containing the area of the overlapping region, represented as a floating-point value with exactly two digits after the decimal point.
 
 ###Sample Input
-
+<pre>
 10.0 10.0 4.0 7.0  
 6.0 9.0 6.0 3.0  
-
+</pre>
 ###Sample Output
 
-4.00
+`4.00`
 
 ###Explanation
 
