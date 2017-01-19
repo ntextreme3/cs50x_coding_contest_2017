@@ -1,8 +1,5 @@
 #include <stdio.h>
-#include <limits.h>
 #include "cs50.h"
-
-#define MAX_FOODS 30;
 
 typedef struct 
 {
@@ -11,11 +8,7 @@ typedef struct
 } tuple;
 
 int L = 0; // initial hunger level
-
-int comb_count = 0;
-// should really be sum of (n!/(i!*(n-i)!)) from i to N (N number of foods)
-// hardcoded to INT_MAX for simplicity
-tuple *comb_results[INT_MAX]; 
+int max_happy = 0; // maximum happiness currently
 
 /* 
     Base Combination code from: 
@@ -67,11 +60,10 @@ void combinationUtil(int arr[], int data[], int start, int end,
         penalty = happiness_penalty(L, current_comb_hunger_sum);
         current_comb_happy_sum = current_comb_happy_sum - penalty;
         
-        // fill comb results array
-        comb_results[comb_count] = malloc(sizeof(tuple));
-        comb_results[comb_count]->hunger = current_comb_hunger_sum;
-        comb_results[comb_count]->happy = current_comb_happy_sum;
-        comb_count++;
+        if (current_comb_happy_sum > max_happy)
+        {
+            max_happy = current_comb_happy_sum;
+        }
         
         return;
     }
@@ -128,24 +120,8 @@ int main(void)
         printCombination(idxs, N, i, tuple_arr);
     }
     
-    // get max happy
-    int max_happy = 0;
-    for (int i = 0; i < comb_count; i++)
-    {
-        if (comb_results[i]->happy > max_happy)
-        {
-            max_happy = comb_results[i]->happy;
-        }
-    }
-    
     // output
     printf("%i\n", max_happy);
-    
-    // free comb results
-    for (int i = 0; i < comb_count; i++)
-    {
-        free(comb_results[i]);
-    }
     
     fflush(stdout);
     return 0;
