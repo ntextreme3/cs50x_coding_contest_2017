@@ -4,7 +4,7 @@ If there is space in the hotel for all of the rooms to be consecutive, your prog
 
 You may include additional header files as needed, and you may call any functions you'd like. Note that the CS50 Library's header file must be included with double quotes (i.e., #include "cs50.h") instead of angled brackets because of how it's installed on HackerRank's servers.
 
-Input Format
+###Input Format
 
 The first line of input will be two numbers, N and M, separated by a space, where N represents the number of floors in the hotel, and M represents the number of rooms on each floor. The following N lines of input will be a string representing the rooms on a floor, in sequential order. Each character in the string represents one room, where a 1 represents an occupied room and a 0 represents a vacant room.
 
@@ -12,7 +12,7 @@ For instance, the line 0011101 would represent a floor with seven rooms, of whic
 
 After taking in input for the N floors, the final line of input will be an integer S, representing the number of rooms for the group that is trying to check in.
 
-Constraints
+###Constraints
 
 N >= 1
 
@@ -24,12 +24,13 @@ The length of each of the N lines will be M
 
 Each character of each of the N lines will be 0 or 1
 
-Output Format
+###Output Format
 
 A single digit 0 if the group checking in cannot have all of their rooms next to one another on the same floor, and a 1 if it is possible.
 
-Sample Input
+###Sample Input
 
+<pre>
 5 6
 110010
 001111
@@ -37,10 +38,14 @@ Sample Input
 000111
 110010
 4
-Sample Output
+</pre>
 
+###Sample Output
+
+<pre>
 0
+</pre>
 
-Explanation
+###Explanation
 
 We leave the TODO to you!
