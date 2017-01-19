@@ -4,7 +4,7 @@ Write a program that, given a string S, outputs a pretty-printed version of S in
 
 A single string, S.
 
-Constraints
+###Constraints
 
 none
 
@@ -30,8 +30,8 @@ Hello world in a frame.
 
 ###Explanation  
 
-Get a sentence from the user.
-Separate out the sentence by word.
-Find the maximum length word.
-Determine a way to pad the other words with spaces so the frame isn't lopsided.
-Print out all the words inside the frame!
+Get a sentence from the user.  
+Separate out the sentence by word.  
+Find the maximum length word.  
+Determine a way to pad the other words with spaces so the frame isn't lopsided.  
+Print out all the words inside the frame!  
