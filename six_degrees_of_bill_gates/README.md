@@ -2,16 +2,16 @@ Write a program that, given a number of people N as an integer, an _N_x_N_ matri
 
 For example, if a user inputs:
 
-3 [[0, 1, 0], [1, 0, 1], [0, 1, 0]] 0 1, your program should print 1
-3 [[0, 1, 0], [1, 0, 1], [0, 1, 0]] 2 0, your program should print 2
-3 [[0, 1, 0], [1, 0, 0], [0, 0, 0]] 0 2, your program should print -1
+`3 [[0, 1, 0], [1, 0, 1], [0, 1, 0]] 0 1`, your program should print 1  
+`3 [[0, 1, 0], [1, 0, 1], [0, 1, 0]] 2 0`, your program should print 2  
+`3 [[0, 1, 0], [1, 0, 0], [0, 0, 0]] 0 2`, your program should print -1  
 You may include additional header files as needed, and you may call any functions you'd like. Note that the CS50 Library's header file must be included with double quotes (i.e., #include "cs50.h") instead of angled brackets because of how it's installed on HackerRank's servers.
 
-Input Format
+###Input Format
 
 The number N will be an integer followed by a newline. The next N lines will be the rows of the two-dimensional array. Each row will be comprised of N integers, with one space in between each integer (N - 1 spaces total) and a newline at the end of the row. The next two lines will each have one integer followed by a newline, representing the people being compared.
 
-Constraints
+###Constraints
 
 2 <= N <= 100
 
@@ -23,22 +23,25 @@ A will be a symmetric matrix.
 
 0 <= Y < N
 
-Output Format
+###Output Format
 
 A number value as an integer, no trailing newline.
 
-Sample Input
-
+###Sample Input
+<pre>
 3
 0 1 0
 1 0 1
 0 1 0
 2
 0
-Sample Output
+</pre>
 
+###Sample Output
+<pre>
 2
+</pre>
 
-Explanation
+###Explanation
 
 We leave the TODO to you!
