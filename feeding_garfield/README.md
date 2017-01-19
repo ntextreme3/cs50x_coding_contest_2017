@@ -6,7 +6,7 @@ Garfield will also incur a -20 happiness for every unit he gets overfed (i.e. su
 
 Write a program that, given Garfield's current hunger level L and a list of food items si, hi, outputs the maximum happiness H that Garfield can achieve.
 
-Input Format
+###Input Format
 
 The first line will be an integer representing Garfield's initial hunger level L.
 
@@ -14,24 +14,28 @@ The next line will be an integer represeting the number of food items N that Jon
 
 The next N lines will be the description si, hi of each food item. You may assume that each of the si and hi are integers.
 
-Constraints
+###Constraints
 
 1 <= N < 30
 
-Output Format
+###Output Format
 
 An integer representing Garfields maximum happiness H.
 
-Sample Input
+###Sample Input
+<pre>
+10  
+3  
+6, 2  
+4, 3  
+9, 5  
+</pre>
 
-10
-3
-6, 2
-4, 3
-9, 5
-Sample Output
-
+###Sample Output
+<pre>
 5
-Explanation
+</pre>
+
+###Explanation
 
 In this case, the maximum happiness occurs when Garfield eats the 0th and 1st items, thus dropping his hunger level to 0 and giving him 5 happiness.
