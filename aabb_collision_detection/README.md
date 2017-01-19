@@ -6,11 +6,11 @@ Write a program that reads values describing two AABBs from standard input and p
 
 For example, if AABB A has its top left corner at (10, 10), a width of 4, and a height of 7, and AABB B has its top left corner at (6, 9), a width of 6, and a height of 3, then the overlapping region extends from x = 10 to x = 12 and from y = 10 to y = 12, so the area of the overlapping region is 4. Your program should print 4.00 in this case.
 
-Input Format
+###Input Format
 
 Two lines, each of the format x y w h. Each line describes a single AABB, where x and y are the x and y coordinates of its top left corner, w is its width, and h is its height.
 
-Constraints
+###Constraints
 
 -1000000.0 <= x <= 1000000.0
 
@@ -22,18 +22,19 @@ Constraints
 
 Each of x, y, w, and h will always be a floating-point value with exactly one digit after the decimal point.
 
-Output Format
+###Output Format
 
 A single line containing the area of the overlapping region, represented as a floating-point value with exactly two digits after the decimal point.
 
-Sample Input
+###Sample Input
 
-10.0 10.0 4.0 7.0
-6.0 9.0 6.0 3.0
-Sample Output
+10.0 10.0 4.0 7.0  
+6.0 9.0 6.0 3.0  
+
+###Sample Output
 
 4.00
 
-Explanation
+###Explanation
 
 Insert code at the TODO!
